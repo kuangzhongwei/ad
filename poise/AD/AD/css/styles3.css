@@ -1,0 +1,1062 @@
+/*
+
+	Theme Name: Poise
+	Description: HTML/CSS Template
+	Author: fireform 
+	License: GNU General Public License version 3.0
+	License URI: http://www.gnu.org/licenses/gpl-3.0.html
+	Version: 1.0
+	
+	Designed & Coded by Fireform
+	All files, unless otherwise stated, are released under the GNU General Public License
+	version 3.0 (http://www.gnu.org/licenses/gpl-3.0.html)
+
+	--------------------------------------------------------------------------
+
+	1.	Document Setup (body, common classes, structure etc.)
+
+		1-1.	Theme color
+		1-2.	Body background
+	
+	2.	Home page styles
+	
+		2-1.	Logo and Nav Menu
+		2-2.	Slider
+		2-3.	Twitter module
+		2-4.	Images and effects
+		
+
+	3.	Team, Services, Clients pages styles
+		
+	4.  Portfolio styles
+	
+	5.	Blog Template
+
+		5-1.	Posts
+		5-2.	Comments
+		5-3.	Replay form & feedback (Contact page)
+		
+	6.	Contact page styles
+		
+	7.	Footer Styles
+
+*/
+
+/*--------------------------- 1 - START DOCUMENT SETUP, COMMON CLASSES ------*/
+input,textarea {
+	outline:none
+}
+
+body {
+	font-size:11px;
+	font-family:Merriweather,serif;
+	min-height:100%;
+	height:auto!important;
+	height:100%
+}
+
+html,body {
+	width:100%;
+	min-width:1000px
+}
+
+#wrapper {
+	width:1002px;
+	margin:0 auto;
+	padding:25px 0
+}
+
+.inner {
+	background:url(../images/inner-bg.png) #fff repeat-y;
+	border:1px #e5e5e5 solid;
+	padding:59px 30px 37px
+}
+
+.inner-960,#footer {
+	width:960px
+}
+
+.clear {
+	clear:both;
+	display:block;
+	overflow:hidden;
+	visibility:hidden;
+	width:0;
+	height:0
+}
+
+.clearfix:before,.clearfix:after {
+	content:'\0020';
+	display:block;
+	overflow:hidden;
+	visibility:hidden;
+	width:0;
+	height:0
+}
+
+.clearfix:after {
+	clear:both
+}
+
+.clearfix {
+	zoom:1
+}
+
+ul li {
+	line-height:1.8em
+}
+
+/*--------------------------- 1-1 START THEME COLOR -----------------------------*/
+::selection {
+	background:#ffedd7
+}
+
+::-moz-selection {
+	background:#ffedd7
+}
+
+.nivo-caption,.proj-img i {
+	background-color:#f38d43
+}
+
+h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,p a,ul.tweet_list a,.divider-text,.post-info a:hover,.footer-wrap a,.breadcrumb a,span.colored,.post-info-blog a,.sidebar a,.widget_tag_cloud ul li a:hover,.accordion .ui-state-active a,a.reply,#map-side-bar div.map-location a:hover,.tabs ul.tabs-nav li.ui-tabs-selected.ui-state-active a,.tabs ul.tabs-nav li.ui-state-default a:hover {
+	color:#f38d43
+}
+
+body,a,ul.menu li a.drop,ul.tweet_list a:hover,.divider-text span a:hover,.widget_tag_cloud ul li a {
+	color:#777
+}
+
+h1,h2,h3,h4,h5,h6,h1 a,h2 a,h3 a,h4 a,h5 a,h6 a,p a:hover,div.tweet,ul.menu li a:hover,ul.menu li a.curr,ul.menu li a.drop:hover,div.tweet,ul.accordion li a.title,.tabs ul.tabs-nav li.ui-tabs-selected a,.tabs ul.tabs-nav a:hover,.alertBox-warning,.alertBox-success,.alertBox-alert,blockquote.blockquote-left,blockquote.blockquote-right,.divider-text a,.post-info a,.comments-more .comm,.footer-wrap a:hover,ul.menu li a.active,.breadcrumb a:hover,ul#filter li.current a,.date-comments,.post-info-blog a:hover,.sidebar a:hover,a.reply:hover,.tabs ul.tabs-nav li a,#error ul li,.date-comments a.comments {
+	color:#202020
+}
+
+/*--------------------------- 1-1 END THEME COLOR -------------------------------*/
+/*--------------------------- 1-2 START BODY BACKGROUND -------------------------*/
+body {
+	background-color:#f1f1f1;
+	background-image:url(../images/patterns/chains.png);
+	background-repeat:repeat;
+	background-position:right top
+}
+
+/*--------------------------- 1-2 END BODY BACKGROUND ---------------------------*/
+a {
+	text-decoration:none;
+	outline:0 none
+}
+
+p {
+	line-height:1.8em;
+	margin-bottom:10px
+}
+
+.alignleft {
+	float:left
+}
+
+.alignright {
+	float:right
+}
+
+.col1-2,.col1-3,.small-post,.col1-4,.wrap690,.col1-5,.col1-6,.col1-12,.item-holder1,.col2-3 {
+	float:left;
+	margin-right:20px
+}
+
+.col1-2 {
+	width:460px
+}
+
+.col1-3 {
+	width:300px
+}
+
+.col1-4 {
+	width:220px
+}
+
+.col1-5 {
+	width:172px
+}
+
+.col1-6 {
+	width:140px
+}
+
+.col4-1 {
+	width:700px
+}
+
+.col1-12 {
+	width:50px
+}
+
+.col2-3 {
+	width:620px
+}
+
+.wrap690 {
+	width:690px;
+	margin-right:30px
+}
+
+.omega {
+	margin-right:0!important
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family:'PT Sans Narrow',sans-serif;
+	font-weight:400;
+	background:url(../images/head-bg.gif) no-repeat left bottom;
+	padding-bottom:3px
+}
+
+h6 {
+	background:none
+}
+
+.totop,ul.menu li ul li a,a.logo,.project img,.preloader,.proj-img i,.post-info p span,.comments-more span.comm,.comments-more a.more,.team-social,ul#portfolio li,ul#recent-posts li,.post-img .proj-img1 a,.date-comments a,.date-comments span,#search .field,#search .field input,.post-info-blog a.more,.search-btn input,.widget_tag_cloud ul li,ul.accordion a.title,ul.accordion li a.title,.tabs ul.tabs-nav li a,.alertBox-warning,.alertBox-success,.alertBox-alert,.widget_tag_cloud ul li a {
+	display:block
+}
+
+.hov {
+	background-image:url(../images/head-bg.png)
+}
+
+.bottom-15 {
+	margin-bottom:15px
+}
+
+.bottom-20 {
+	margin-bottom:20px
+}
+
+.bottom-35 {
+	margin-bottom:35px
+}
+
+.bottom-40 {
+	margin-bottom:40px
+}
+
+.bottom-50 {
+	margin-bottom:50px
+}
+
+/*--------------------------- 1 - END DOCUMENT SETUP, COMMON CLASSES ------*/
+/*--------------------------- 2 - START HOME PAGE STYLES ------------------*/
+.dark-line {
+	height:4px;
+	width:100%;
+	position:relative;
+	background:#202020
+}
+
+.totop {
+	width:27px;
+	height:30px;
+	position:absolute;
+	bottom:0;
+	right:0;
+	background:url(../images/totop.gif) #202020 no-repeat left 50%
+}
+
+.totop:hover {
+	background-position:right 50%
+}
+
+/*--------------------------- 2-1 - START LOGO AND NAV --------------------*/
+ul.menu {
+	text-align:center;
+	position:relative;
+	z-index:500;
+	width:1000px;
+	margin:0 auto 25px;
+	border-top:1px #dedede solid;
+	border-bottom:1px #dedede solid
+}
+
+ul.menu li {
+	list-style:none;
+	position:relative;
+	display:inline-block;
+	margin:0 7px
+}
+
+ul.menu li a {
+	display:inline-block;
+	height:30px;
+	line-height:30px;
+	margin:0 1px;
+	padding:0 12px;
+	text-transform:uppercase;
+	font-family:'PT Sans Narrow',sans-serif;
+	font-size:14px
+}
+
+ul.menu li a.drop {
+	background:url(../images/drop.png) no-repeat right 50%;
+	border:none;
+	margin:0 1px;
+	padding-right:30px
+}
+
+ul.menu li a.drop.curr {
+	background:url(../images/drop.png) #fff no-repeat right 50%
+}
+
+ul.menu li a:hover,ul.menu li a.curr,ul.menu li a.active {
+	margin:0;
+	background:#fff;
+	border-left:1px #e5e5e5 solid;
+	border-right:1px #e5e5e5 solid
+}
+
+ul.menu li a.drop:hover,ul.menu li a.active {
+	margin:0;
+	background:url(../images/drop.png) #fff no-repeat right 50%;
+	border-left:1px #e5e5e5 solid;
+	border-right:1px #e5e5e5 solid
+}
+
+ul.menu li ul {
+	display:none;
+	left:1px;
+	text-align:left;
+	background:#777;
+	padding:10px 0 15px;
+	width:187px;
+	font-size:13px;
+	position:absolute
+}
+
+ul.menu li ul li {
+	border-width:0;
+	clear:both;
+	width:100%;
+	height:auto;
+	border:0;
+	margin:0
+}
+
+ul.menu li ul li a {
+	line-height:1em;
+	height:auto;
+	color:#fff;
+	margin:0;
+	border-bottom:1px #858585 solid;
+	padding:8px 16px 8px 30px;
+	background:url(../images/menu-marker.gif) #777 no-repeat 16px 13px
+}
+
+ul.menu li ul li a:hover {
+	border:0;
+	color:#fff;
+	background:url(../images/menu-marker.gif) #777 no-repeat 16px -82px;
+	border-bottom:1px #bbb solid
+}
+
+div.description {
+	float:right;
+	width:710px;
+	text-align:right
+}
+
+div.description p {
+	font-size:12px
+}
+
+.divider-text {
+	font-size:13px;
+	text-transform:uppercase;
+	text-align:right;
+	background:url(../images/divider-bg.png) repeat-x left bottom
+}
+
+/*--------------------------- 2-1 - END LOGO AND NAV --------------------*/
+/*--------------------------- 2-2 - START SLIDER ------------------------*/
+/*---------- Other styles of the Slider at js/nivo/nivo-slider.css ------*/
+.main-slider {
+	position:relative
+}
+
+.nivo-caption span {
+	font-family:'PT Sans Narrow',sans-serif;
+	font-size:20px
+}
+
+/*--------------------------- 2-2 - END SLIDER --------------------------*/
+/*--------------------------- 2-3 - START TWITTER MODULE ----------------*/
+div.tweet {
+	text-align:center;
+	background:url(../images/tweet.png) #f2f2f2 no-repeat left top;
+	padding:23px 160px;
+	font-size:12px
+}
+
+ul.tweet_list a {
+	padding-bottom:2px;
+	border-bottom:1px #e5e5e5 solid
+}
+
+.tweet_text {
+	line-height:1.8em
+}
+
+.divider-text span {
+	padding-left:20px;
+	background:#fff
+}
+
+.sidebar div.tweet1 ul li,#footer div.tweet1 ul li {
+	background:url(../images/tweet1.png) no-repeat left 6px
+}
+
+/*--------------------------- 2-3 - END TWITTER MODULE ------------------*/
+.project {
+	margin-bottom:20px
+}
+
+.proj-info {
+	text-align:center;
+	padding:15px 0
+}
+
+.proj-info p {
+	padding:0 10px;
+	margin-bottom:0
+}
+
+/*--------------------------- 2-4 - START IMAGES AND EFFECTS ------------*/
+.proj-img,.proj-img1 {
+	position:relative;
+	overflow:hidden
+}
+
+.proj-img img,.proj-img1 img {
+	visibility:hidden
+}
+
+.preloader {
+	background:url(../images/loading.gif) #fff no-repeat 50% 50%;
+	margin-top:-1px;
+	border-top:1px #dedede solid
+}
+
+.proj-img a {
+	display:inline-block;
+	width:29px;
+	height:29px;
+	position:absolute;
+	top:50%;
+	left:-29px;
+	background:url(../images/zoom-more.png) right bottom no-repeat;
+	margin-top:-14px;
+	z-index:10
+}
+
+.proj-img a.zoom {
+	background:url(../images/zoom-more.png) right top no-repeat;
+	margin-left:-29px
+}
+
+.proj-img a:hover {
+	background-position:left bottom
+}
+
+.proj-img a.zoom:hover {
+	background-position:left top
+}
+
+.proj-img i {
+	font-style:normal;
+	position:absolute;
+	width:100%;
+	height:100%;
+	z-index:9;
+	top:0;
+	left:0;
+	opacity:0;
+	filter:alpha(opacity:0)
+}
+
+a.prettyPhoto {
+	display:block
+}
+
+.proj-img.clients {
+	line-height:145px;
+	text-align:center;
+	height:145px;
+	border:1px #dedede solid
+}
+
+.proj-img.clients img {
+	vertical-align:middle
+}
+
+.col1-2 .proj-img.clients img {
+	max-width:400px;
+	max-height:85px
+}
+
+.col1-3 .proj-img.clients img {
+	max-width:240px;
+	max-height:85px
+}
+
+.col1-4 .proj-img.clients img {
+	max-width:160px;
+	max-height:85px
+}
+
+/*--------------------------- 2-4 - END IMAGES AND EFFECTS --------------*/
+.post-info {
+	text-transform:uppercase;
+	margin-bottom:20px;
+	font-family:'PT Sans Narrow',sans-serif;
+	font-size:13px
+}
+
+.post-info p {
+	display:inline;
+	margin:0;
+	float:left;
+	padding-right:20px
+}
+
+.post-info p span {
+	margin-bottom:3px
+}
+
+.comments-more {
+	float:right;
+	width:49px
+}
+
+.post-info a {
+	border-bottom:1px #e5e5e5 solid;
+	padding-bottom:2px
+}
+
+.comments-more span.comm {
+	padding:10px 0;
+	border-top:1px #e5e5e5 solid;
+	border-left:1px #e5e5e5 solid;
+	border-right:1px #e5e5e5 solid;
+	text-align:center;
+	font-size:12px
+}
+
+.comments-more a.more {
+	padding:0;
+	height:34px;
+	width:100%;
+	border:0;
+	background-image:url(../images/more.gif);
+	background-color:#f1f1f1;
+	background-repeat:no-repeat;
+	background-position:left center
+}
+
+.comments-more a.more:hover {
+	background-position:right center
+}
+
+.open-close {
+	position:relative
+}
+
+.open-close a {
+	cursor:pointer;
+	position:absolute;
+	top:-1px;
+	right:0;
+	float:right;
+	width:30px;
+	height:23px;
+	background:url(../images/open-close-tab.png) no-repeat left top
+}
+
+.open-close a.closed {
+	background-position:right top
+}
+
+/*--------------------------- 2 - END HOME PAGE STYLES ----------------*/
+/*---------- 3 - START TEAM, SERVICES, CLIENTS PAGES STYLES -----------*/
+.social a,.team-social a {
+	height:25px;
+	display:inline-block;
+	width:25px;
+	margin-left:8px;
+	position:relative;
+	cursor:pointer;
+	background-color:#c4c4c4;
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+	border-radius:50px
+}
+
+.social a span,.team-social a span {
+	position:absolute;
+	left:50%;
+	top:50%;
+	right:50%;
+	bottom:50%;
+	border-radius:50px;
+	background:#202020;
+	background-position:50% 50%
+}
+
+.social a.skype,.social a.skype span,.team-social a.skype,.team-social a.skype span {
+	background-image:url(../images/social/skype.png)
+}
+
+.social a.twitter,.social a.twitter span,.team-social a.twitter,.team-social a.twitter span {
+	background-image:url(../images/social/twitter.png)
+}
+
+.social a.facebook,.social a.facebook span,.team-social a.facebook,.team-social a.facebook span {
+	background-image:url(../images/social/facebook.png)
+}
+
+.social a.forrstr,.social a.forrstr span,.team-social a.forrstr,.team-social a.forrstr span {
+	background-image:url(../images/social/forrstr.png)
+}
+
+.social a.dribbble,.social a.dribbble span,.team-social a.dribbble,.team-social a.dribbble span {
+	background-image:url(../images/social/dribbble.png)
+}
+
+.social a.flickr,.social a.flickr span,.team-social a.flickr,.team-social a.flickr span {
+	background-image:url(../images/social/flickr.png)
+}
+
+.social a.vimeo,.social a.vimeo span,.team-social a.vimeo,.team-social a.vimeo span {
+	background-image:url(../images/social/vimeo.png)
+}
+
+.social a.linkedin,.social a.linkedin span,.team-social a.linkedin,.team-social a.linkedin span {
+	background-image:url(../images/social/linkedin.png)
+}
+
+.team-social {
+	margin-right:0;
+	padding-top:8px;
+	float:none
+}
+
+.team-social a {
+	width:19px;
+	height:19px;
+	background-color:#d6d6d6;
+	margin:0 5px 5px 0
+}
+
+.breadcrumb,.post-info-blog {
+	font-size:12px;
+	padding:10px 0;
+	border-top:1px #dedede solid;
+	border-bottom:1px #dedede solid
+}
+
+p.position {
+	font-size:12px;
+	background:url(../images/head-bg.gif) repeat-x left bottom;
+	padding-bottom:2px
+}
+
+.services h4 {
+	margin-left:58px
+}
+
+.icon {
+	width:58px;
+	height:38px;
+	float:left
+}
+
+/*----------- 3 - END TEAM, SERVICES, CLIENTS PAGES STYLES ------------*/
+/*---------------------- 4 - START PORTFOLIO STYLES -------------------*/
+ul#portfolio li,ul#recent-posts li {
+	position:relative;
+	list-style:none
+}
+
+ul#filter li {
+	line-height:1em;
+	list-style:none;
+	display:inline
+}
+
+ul#portfolio li .cover {
+	position:absolute;
+	background:#fff;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	opacity:0;
+	display:none;
+	z-index:500
+}
+
+/*---------------------- 4 - END PORTFOLIO PAGE STYLES ----------------*/
+/*---------------------- 5 - START BLOG TENPLATE STYLES ---------------*/
+/*---------------------- 5-1 - START POSTS ----------------------------*/
+.date-wrap {
+	position:relative;
+	z-index:1
+}
+
+.date-comments {
+	padding:0 14px 0 0;
+	margin-right:10px;
+	text-align:center;
+	float:left
+}
+
+.post-img .date-comments {
+	position:absolute;
+	background:#fff;
+	bottom:25px;
+	margin-left:3px;
+	margin-right:0;
+	padding:15px 14px 5px
+}
+
+.date-comments .date {
+	font-size:28px;
+	margin-bottom:5px
+}
+
+.date-comments a.comments {
+	background:url(../images/comments.png) #fff no-repeat left bottom;
+	padding:13px 18px 19px;
+	margin-bottom:5px
+}
+
+.post-info-blog {
+	font-family:'PT Sans Narrow',sans-serif;
+	text-transform:uppercase;
+	margin-top:20px;
+	padding:3px 0
+}
+
+.post-info-blog div {
+	line-height:25px
+}
+
+.post-info-blog a.more {
+	height:25px;
+	width:37px;
+	background:url(../images/more1.gif) #f1f1f1 no-repeat 50% top
+}
+
+.post-info-blog a.more:hover {
+	background-position:50% bottom
+}
+
+.date-wrap .date-comments a.comments {
+	font-size:12px;
+	background-color:#efefef
+}
+
+/*---------------------- 5-1 - END POSTS ------------------------------*/
+/*---------------------- 5-2 - START COMMENTS -------------------------*/
+.comments-list .post-comm p.auth {
+	padding-bottom:15px;
+	background:url(../images/auth-bg.gif) no-repeat left bottom
+}
+
+.comments-list .post-comm {
+	padding-left:80px
+}
+
+.comments-list li {
+	list-style:none;
+	margin-left:0
+}
+
+ul.comments-list li {
+	display:block;
+	margin-top:25px
+}
+
+ul.comments-list li a.avatar img {
+	width:60px;
+	height:60px;
+	display:block
+}
+
+ul.comments-list ul.children-comm {
+	padding-left:20px;
+	background:url(../images/children.gif) no-repeat left top
+}
+
+/*------------------------ 5-2 - END COMMENTS -------------------------*/
+/*------------------------ 5-3 - START REPLAY FORM & FEEDBACK ---------*/
+a.reply {
+	display:inline-block;
+	border-bottom:1px #e5e5e5 solid;
+	padding-bottom:2px
+}
+
+#reply,.submitform {
+	margin-top:20px
+}
+
+#reply div,.submitform div {
+	overflow:hidden
+}
+
+#reply label,.submitform label {
+	float:left;
+	display:block;
+	line-height:29px;
+	width:80px
+}
+
+#reply input,#reply textarea,.submitform input,.submitform textarea {
+	color:#656565;
+	border:1px #e0e0e0 solid
+}
+
+#reply input,.submitform input {
+	margin-bottom:20px;
+	height:27px;
+	line-height:27px;
+	width:220px;
+	padding:0 10px
+}
+
+#reply textarea {
+	margin-left:80px
+}
+
+#reply textarea,.submitform textarea {
+	line-height:1.3em;
+	width:435px;
+	min-width:435px;
+	max-width:580px;
+	height:130px;
+	padding:10px
+}
+
+.send-wrap div {
+	display:inline
+}
+
+#reply div.send-wrap input.send,.submitform div.send-wrap input.send {
+	width:auto;
+	outline:0;
+	border:1px #e0e0e0 solid;
+	background:#fff;
+	padding:5px 15px;
+	line-height:1.6em;
+	margin:0!important
+}
+
+div.send-wrap {
+	color:#9F9F9F;
+	padding-left:80px;
+	width:455px;
+	overflow:hidden;
+	margin:20px 0 0
+}
+
+.send-wrap input.send {
+	font-family:Merriweather,serif;
+	font-weight:400;
+	display:inline;
+	line-height:1.6em;
+	margin:0!important
+}
+
+.submitform div input {
+	width:355px
+}
+
+.submitform div.send-wrap {
+	width:380px
+}
+
+.submitform div textarea {
+	max-width:355px;
+	min-width:355px
+}
+
+.respond-logged #message {
+	margin-left:0
+}
+
+.respond-logged .send-wrap {
+	padding-left:0!important
+}
+
+#error {
+	display:none
+}
+
+#error ul {
+	list-style:none;
+	margin-left:80px
+}
+
+#error ul li {
+	margin:0;
+	padding:12px 45px 12px 15px;
+	background:url(../images/sucsess.png) #d0ffc3 no-repeat right 50%;
+	border:1px solid #afe6a0;
+	display:block;
+	margin-bottom:25px;
+	line-height:1em;
+	clear:both
+}
+
+#error ul li.mail-err {
+	background:url(../images/warning.png) #ffdcdc no-repeat right 50%;
+	border:1px solid #f0bbbb
+}
+
+/*------------------------ 5-3 - END REPLAY FORM & FEEDBACK -----------*/
+/*------------------------ 5 - END BLOG TENPLATE STYLES ---------------*/
+/*------------------------ 6 - START CONTACT PAGE STYLES --------------*/
+#map {
+	width:940px;
+	height:400px
+}
+
+#map-side-bar {
+	margin-bottom:50px;
+	overflow:hidden
+}
+
+#map-side-bar div.map-location a {
+	margin-bottom:5px
+}
+
+#map-side-bar div.map-location {
+	float:left;
+	margin-right:20px
+}
+
+#map-side-bar div.map-location a {
+	color:#202020
+}
+
+#map-side-bar div.map-location {
+	margin-bottom:10px
+}
+
+/*------------------------- 6 - END CONTACT PAGE STYLES ---------------*/
+/*------------------------- 7 - START FOOTER --------------------------*/
+#footer {
+	padding-top:50px
+}
+
+.footer-wrap {
+	padding:0 30px
+}
+
+.copyrigts {
+	padding-top:20px;
+	font-family:'PT Sans Narrow',sans-serif;
+	font-size:13px
+}
+
+.copyrigts .owner {
+	float:left;
+	line-height:25px
+}
+
+.social {
+	float:right;
+	margin-right:20px
+}
+
+/*------------------------- 7 - END FOOTER ----------------------------*/
+
+
+
+/*---------------------------------------------------------------------*/
+/*------------------------------ WIDGETS ------------------------------*/
+/*---------------------------------------------------------------------*/
+#search {
+	margin-top:20px;
+	width:100%;
+	border:1px #eee solid
+}
+
+#search .field,#search .field input {
+	width:85%;
+	background:#eee
+}
+
+#search .field,#search .field input {
+	height:28px;
+	line-height:28px
+}
+
+#search .field input {
+	padding:0 10px
+}
+
+.search-btn input {
+	width:15%;
+	height:28px;
+	background:url(../images/search.png) #eee no-repeat 50% 50%
+}
+
+.search-btn input:hover {
+	background-color:#fff
+}
+
+ul#portfolio li,ul#filter li,ul#recent-posts li {
+	line-height:1em;
+	margin-bottom:0
+}
+
+.widget_links ul li,.widget_categories ul li,ul.tweet_list li {
+	list-style:none
+}
+
+.widget_links ul li,.widget_categories ul li {
+	background:url(../images/li-arr.gif) no-repeat left 7px
+}
+
+.widget_links ul li,.widget_categories ul li {
+	padding-left:15px;
+	margin-bottom:7px
+}
+
+.widget_text {
+	line-height:1.8em
+}
+
+.widget_tag_cloud {
+	overflow:hidden
+}
+
+.widget_tag_cloud ul {
+	margin-top:15px;
+	list-style:none
+}
+
+.widget_tag_cloud ul li {
+	float:left;
+	margin:0 8px 10px 0
+}
+
+.widget_tag_cloud ul li a {
+	line-height:1em;
+	border:1px #f1f1f1 solid;
+	font-size:10px!important;
+	padding:6px 20px 6px 16px;
+	background:#f1f1f1
+}
+
+.widget_tag_cloud ul li a:hover {
+	background:transparent
+}

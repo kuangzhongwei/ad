@@ -1,0 +1,23 @@
+﻿@charset "utf-8";
+body {background: #F6F6F6; margin:0; padding:0;}
+.erro_content{ width:927px; margin:0 auto; font-family:Arial; margin-top:100px;}
+.erro_top{ width:927px; float:left; padding-bottom:22px; border-bottom:1px solid #666;}
+.erro_top_left{ width:160px; float:left; padding-left:112px; margin-right:53px;}
+.erro_top_right{ width:602px; float:left;}
+.erro_top_right1{ width:602px; float:left;}
+.erro_link1{ width:602px; float:left; line-height:22px; height:22px; overflow:hidden; margin:20px 0;}
+.erro_link1 a{ font-size:14px; margin-right:20px; color:#1552AD; text-decoration:none; padding-left:10px; background: url(http://images.px33.com/2011/images/skin2011/fke.jpg) 0 6px no-repeat;}
+.erro_link1 a:link{color:#1552AD; }
+.erro_link1 a:hover{color:#c00; }
+.erro_link1 a:visited{color:#1552AD; }
+.erro_search{width:602px; float:left; overflow:hidden;}
+.search_input{ width:330px; height:29px!important; height:28px; border-top:1px solid #999;border-left:1px solid #999;border-right:1px solid #ccc;border-bottom:1px solid #ccc; line-height:29px; padding:0 0 0 4px; font-size:14px; font-family:Arial; color:#666; margin:0;}
+.erro_search_input{ display:block;width:335px;height:31px; overflow:hidden; float:left;margin:0; padding:0;}
+.erro_search_go{ display:block;width:94px;height:31px; overflow:hidden; float:left;margin:0; padding:0;}
+.erro_bottom{width:927px; float:left; text-align:center; line-height:30px; padding:14px 0 10px 0; color:#666; font-size:14px;}
+.erro_bottom a{ color:#1354AE; text-decoration:none; margin:0 10px;}
+.erro_bottom a:link{ color:#1354AE; text-decoration:none;}
+.erro_bottom a:visited{ color:#1354AE; text-decoration:none;}
+.erro_bottom a:hover{ color:#c00; text-decoration:none;}
+.fblue{ color:#1354AE}
+.erro_kf{width:927px; float:left; text-align:center; }

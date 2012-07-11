@@ -1,0 +1,363 @@
+/*
+	Theme Name: Poise
+	Description: HTML/CSS Template
+	Author: fireform 
+	License: GNU General Public License version 3.0
+	License URI: http://www.gnu.org/licenses/gpl-3.0.html
+	Version: 1.0
+	
+	Designed & Coded by Fireform
+	All files, unless otherwise stated, are released under the GNU General Public License
+	version 3.0 (http://www.gnu.org/licenses/gpl-3.0.html)
+
+*/
+
+
+/*Headings*/
+h1 {
+	font-size:33px;
+	line-height:1.2em;
+	margin-bottom:12px;
+	background:none
+}
+
+h2 {
+	font-size:27px;
+	line-height:1.3em;
+	margin-bottom:12px
+}
+
+h3 {
+	font-size:23px;
+	line-height:1.3em;
+	padding-bottom:3px;
+	margin-bottom:10px
+}
+
+h4 {
+	font-size:18px;
+	margin-bottom:10px;
+	line-height:1.3em
+}
+
+h5 {
+	font-size:16px;
+	margin-bottom:10px;
+	line-height:1.4em
+}
+
+h6 {
+	font-size:14px;
+	line-height:1.5em;
+	font-weight:700;
+	margin-bottom:10px
+}
+
+.bg-none {
+	background:transparent!important
+}
+
+/*Two types of the divider here*/
+
+.divider {
+	height:3px;
+	max-width:940px;
+	background:url(../images/divider-bg.png) repeat-x;
+	clear:both
+}
+
+.divider1 {
+	height:1px;
+	max-width:980px;
+	background:url(../images/head-bg.gif) repeat-x;
+	clear:both
+}
+
+/*Lists*/
+
+/*Column shortcodes*/
+
+.one_half,.one_third,.one_fourth,.one_fifth,.one_sixth,.two_thirds,.three_fourth {
+	float:left;
+	line-height:1.6em;
+	margin-bottom:50px
+}
+
+.one_half {
+	margin-right:2%;
+	width:49%
+}
+
+.one_third {
+	margin-right:3%;
+	width:31%
+}
+
+.one_fourth {
+	margin-right:2.9%;
+	width:22.8%
+}
+
+.one_fifth {
+	margin-right:1.9%;
+	width:18.4%
+}
+
+.one_sixth {
+	margin-right:1.9%;
+	width:15%
+}
+
+.two_thirds {
+	margin-right:2%;
+	width:66%
+}
+
+.three_fourth {
+	margin-right:1.9%;
+	width:74.3%
+}
+
+/*Text highlight*/
+
+span.highlight-hl-theme,span.highlight-hl-red,span.highlight-hl-lightred,span.highlight-hl-yellow,span.highlight-hl-blue,span.highlight-hl-green,span.highlight-hl-grey,span.highlight-hl-black,span.highlight-hl-orange,span.highlight-hl-pink {
+	padding:1px 4px 2px;
+	line-height:1.6em
+}
+
+span.highlight-hl-red {
+	border:1px solid #ffbaba
+}
+
+span.highlight-hl-blue {
+	border:1px solid #bad4ff
+}
+
+span.highlight-hl-green {
+	border:1px solid #b1eda3
+}
+
+span.highlight-hl-grey {
+	border:1px solid #d6d6d6
+}
+
+span.highlight-hl-orange {
+	border:1px solid #ffd0b6
+}
+
+
+/*Images in text (from left and right sides)*/
+img.alignleft {
+	float:left;
+	margin:0 20px 10px 0
+}
+
+img.alignright {
+	float:right;
+	margin:0 0 10px 20px
+}
+
+/*Lists*/
+
+.widget_tag_cloud ul li,.widget_categories ul li,ul#portfolio li,ul#filter li,ul#recent-posts li {
+	margin-left:0
+}
+
+ul.check li {
+	background:url(../images/marker-1.html) no-repeat 0 3px;
+}
+
+ul.stick li {
+	background:url(../images/stick.gif) no-repeat 0 9px
+}
+
+ul.stars li {
+	background:url(../images/star.png) no-repeat 0 6px
+}
+
+ul.checkboxes li {
+	background:url(../images/checkb.png) no-repeat 0 5px
+}
+
+ul.arrows li {
+	background:url(../images/arrow.gif) no-repeat 0 8px
+}
+
+ul.recent-posts li,.widget_recent_entries ul li {
+	background:url(../images/pencil.html) no-repeat 0 5px
+}
+
+ol li,ul li {
+	margin-left:20px;
+	margin-bottom:7px
+}
+
+ul.stick li,ul.stars li,.widget_links ul li,ul.checkboxes li,ul.tweet_list li,ul.arrows li {
+	padding-left:20px;
+	margin-bottom:7px;
+	margin-left:0;
+	list-style:none
+}
+
+/*Accordion*/
+
+.accordion .ui-state-focus {
+	outline:none
+}
+
+.accordion .ui-accordion-header a {
+	outline:0 none;
+	display:block;
+	padding:5px 51px 5px 20px
+}
+
+.accordion .ui-accordion-content {
+	padding:10px 20px
+}
+
+.accordion .ui-accordion-header {
+	background:transparent;
+	border:1px #e5e5e5 solid;
+	margin-bottom:1px;
+	cursor:pointer;
+	position:relative
+}
+
+.accordion .ui-accordion-header .ui-icon {
+	border:1px #e5e5e5 solid;
+	cursor:pointer;
+	width:11px;
+	height:11px;
+	display:block;
+	position:absolute;
+	right:20px;
+	top:50%;
+	margin-top:-6px;
+	background:url(../images/accordion.gif) no-repeat left;
+}
+
+.accordion .ui-state-active .ui-icon {
+	background:url(../images/accordion.gif) no-repeat right;
+}
+
+/*Tabs*/
+.sg-sc-tabs,.tabs {
+	line-height:1.6em
+}
+
+.sg-sc-tabs ul.tabs-nav,ul.tabs-nav {
+	list-style:none outside none;
+	margin:0 0 0 1px;
+	border-bottom:1px #e5e5e5 solid;
+	overflow:hidden;
+	padding:0
+}
+
+.sg-sc-tabs ul.tabs-nav li,ul.tabs-nav li {
+	float:left;
+	margin:0 2px 0 0;
+	position:relative;
+	z-index:10
+}
+
+.sg-sc-tabs ul.tabs-nav li a,ul.tabs-nav li a {
+	-moz-border-bottom-colors:none;
+	-moz-border-image:none;
+	-moz-border-left-colors:none;
+	-moz-border-right-colors:none;
+	-moz-border-top-colors:none;
+	background:none repeat scroll 0 0 #f8f8f8;
+	border-color:#e9e9e9;
+	border-style:solid solid none;
+	border-width:1px;
+	display:block;
+	overflow:hidden;
+	padding:5px 15px
+}
+
+.sg-sc-tabs ul.tabs-nav li.ui-tabs-selected a,.tabs ul.tabs-nav a:hover {
+	background:none repeat scroll 0 0 #FFF
+}
+
+.sg-sc-tabs .tab,.tab {
+	padding:15px 0
+}
+
+.sg-sc-tabs .ui-tabs-hide,.ui-tabs-hide {
+	left:-10000px;
+	position:absolute
+}
+
+/*Alerts*/
+.alertBox-warning,.alertBox-success,.alertBox-alert {
+	background:url(../images/warning.png) #ffecc3 no-repeat right 50%;
+	padding:12px 45px 12px 15px;
+	color:#202020!important;
+	border:1px solid #e3cea0;
+	display:block;
+	margin-bottom:25px;
+	line-height:1em;
+	clear:both
+}
+
+.alertBox-warning p,.alertBox-success p,.alertBox-alert p {
+	margin:0
+}
+
+.alertBox-success {
+	background:url(../images/sucsess.png) #d0ffc3 no-repeat right 50%;
+	border-color:#afe6a0
+}
+
+.alertBox-alert {
+	background:url(../images/error.png) #ffdcdc no-repeat right 50%;
+	border-color:#f0bbbb
+}
+
+.alertBox-success div,.alertBox-warning div,.alertBox-alert div {
+	border-style:solid!important;
+	padding:10px;
+	clear:both
+}
+
+/*Bolckquotes*/
+blockquote.blockquote-left,blockquote.blockquote-right {
+	font-size:12px;
+	width:40%;
+	line-height:1.6em;
+	font-style:italic;
+	color:#202020
+}
+
+blockquote.blockquote-left {
+	border-right:1px solid #d1d1d1;
+	float:left;
+	padding-right:20px;
+	margin:10px 20px 10px 0
+}
+
+blockquote.blockquote-right {
+	border-left:1px solid #d1d1d1;
+	float:right;
+	font-style:italic;
+	color:#202020;
+	padding-left:20px;
+	margin:10px 0 10px 20px
+}
+
+.testimonials {
+	overflow:hidden;
+}
+
+.testimonials p {
+	font-size:12px;
+	line-height:1.6em;
+	overflow:hidden;
+	padding-bottom:20px;
+	background:url(../images/testimonials-bg.gif) no-repeat right bottom;
+	font-style:italic
+}
+
+.testimonials h6 {
+	float:right
+}

@@ -1,0 +1,56 @@
+/*----------------------------------------
+    * Pseudo-Classes
+----------------------------------------*/
+.clearfix:after {
+	clear:both;
+	content:".";
+	height:0;
+	display:block;
+	visibility:hidden
+}
+
+/*----------------------------------------
+    * jFlickr
+----------------------------------------*/
+.jflickr-container {
+	position:relative;
+	padding-top:5px;
+	width:240px
+}
+
+.jflickr-container .jflickr-images {
+	position:relative
+}
+
+.jflickr-container .jflickr-images * {
+	list-style:none;
+	font-family:Arial,Helvetica,sans-serif;
+	color:#fff;
+	font-size:10px;
+	font-style:normal;
+	font-weight:400;
+	text-decoration:none;
+	background:#fff
+}
+
+.jflickr-container .jflickr-images .jflickr-image {
+	position:relative;
+	margin:0 14px 14px 0;
+	float:left;
+	overflow:hidden
+}
+
+.jflickr-image img {
+	height:100%;
+	position:relative;
+	margin:0 auto;
+	display:block
+}
+
+.jflickr-image {
+	display:block;
+}
+
+.jflickr-container .tag {
+	font-style:italic
+}

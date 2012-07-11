@@ -1,0 +1,126 @@
+/* theme changer */
+.theme-changer-wrap {
+	font-family:'PT Sans Narrow',sans-serif;
+	color:#202020;
+	position:fixed;
+	z-index:5000;
+	top:60px;
+	left:-148px
+}
+
+.theme-changer {
+	float: left;
+	background-color:#fff;
+	text-transform:uppercase;
+	font-size:14px;
+	padding:15px 20px
+}
+
+.changer-inner {
+	overflow:hidden;
+	width:108px
+}
+
+.theme-changer-wrap a {
+	float:left;
+	display:block;
+	margin-right:3px;
+	margin-bottom:3px;
+	width:24px;
+	height:24px
+}
+
+a.color-themes {
+	cursor:pointer;
+}
+
+a.col1 {
+	background:#34739f
+}
+
+a.col2 {
+	background:#3e9f34
+}
+
+a.col3 {
+	background:#f38d43
+}
+
+a.col4 {
+	background:#e75151
+}
+
+a.col5 {
+	background:#aa60ba
+}
+
+a.col6 {
+	background:#27bea3
+}
+
+a.col7 {
+	background:#70ac2a
+}
+
+a.col8 {
+	background:#b58f24
+}
+
+.changer-inner span {
+	display: block;
+	margin-bottom:15px
+}
+
+.theme-changer-wrap a.pat {
+	width:103px;
+	border:1px #e2e2e2 solid;
+	height:35px;
+	background:#000;
+}
+
+.theme-changer-wrap a.pat#pat1 {
+	background:url(../images/demo-patterns/chains.png);
+}
+
+.theme-changer-wrap a.pat#pat2 {
+	background:url(../images/demo-patterns/china-tile.png);
+}
+
+.theme-changer-wrap a.pat#pat3 {
+	background:url(../images/demo-patterns/cilinders.png);
+}
+
+.theme-changer-wrap a.pat#pat4 {
+	background:url(../images/demo-patterns/egypt-waves.png);
+}
+
+.theme-changer-wrap a.pat#pat5 {
+	background:url(../images/demo-patterns/garden.png);
+}
+
+.theme-changer-wrap a.pat#pat6 {
+	background:url(../images/demo-patterns/meteors.png);
+}
+
+.theme-changer-wrap a.pat#pat7 {
+	background:url(../images/demo-patterns/rain.png);
+}
+
+.theme-changer-wrap a.pat#pat8 {
+	background:url(../images/demo-patterns/turtle.png);
+}
+
+.theme-changer-wrap a.pat#backgr-image {
+	background:url(../images/demo-patterns/dragon.png) no-repeat top right;
+}
+
+div.open-close-demo {
+	position:relative;
+	left:0;
+	display:block;
+	width:40px;
+	height:40px;
+	float:left;
+	cursor:pointer;
+	background:url(../images/sett.png) #fff no-repeat 50% 50%
+}
