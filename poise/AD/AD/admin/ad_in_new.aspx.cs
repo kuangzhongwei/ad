@@ -128,7 +128,7 @@ namespace AD.admin
             Htmlstring = HttpContext.Current.Server.HtmlEncode(Htmlstring).Trim();
             if (Htmlstring.Length > 50)
             {
-                return Htmlstring.Substring(0, 32);
+                return Htmlstring.Substring(0, 40);
             }
             else
             {

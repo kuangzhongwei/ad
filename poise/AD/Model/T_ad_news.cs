@@ -44,8 +44,8 @@ namespace Model
             get { return new_num; }
             set { new_num = value; }
         }
-        private DateTime new_time;
-        public DateTime New_time
+        private string new_time;
+        public string New_time
         {
             get { return new_time; }
             set { new_time = value; }

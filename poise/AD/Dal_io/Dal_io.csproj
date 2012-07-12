@@ -48,7 +48,6 @@
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="dal_user.cs" />
-    <Compile Include="home\htmlpage.cs" />
     <Compile Include="io_io.cs" />
     <Compile Include="loadhtml.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

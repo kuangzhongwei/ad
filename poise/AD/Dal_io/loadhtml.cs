@@ -47,9 +47,14 @@ namespace Dal_io
             }
 
         }
-        public  static string js()
+        public static string js()
         {
             string str = loadhtml.html("js", "javascript"); ;
+            return str;
+        }
+        public static string daohang()
+        {
+            string str=loadhtml.html("static","daohang");
             return str;
         }
         public static string css()

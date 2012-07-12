@@ -132,7 +132,7 @@ namespace DAL
                     model.New_info = a.normal.toString(dr["new_info"]);
                     model.New_num = a.normal.toInt(dr["new_num"]);
                     model.New_Summary = a.normal.toString(dr["new_summary"]);
-                    model.New_time = a.normal.toDateTime(dr["new_time"]);
+                    model.New_time = a.normal.toDateTime(dr["new_time"]).ToString("yyyy-MM-dd") ;
                     model.New_title = a.normal.toString(dr["new_title"]);
                     model.Type_name = a.normal.toString(dr["type_name"]);
                     list.Add(model);
@@ -181,7 +181,7 @@ namespace DAL
                     model.New_img = a.normal.toString(dr["new_img"]);
                     model.New_info = a.normal.toString(dr["new_info"]);
                     model.New_num = a.normal.toInt(dr["new_num"]);
-                    model.New_time = a.normal.toDateTime(dr["new_time"]);
+                    model.New_time = a.normal.toDateTime(dr["new_time"]).ToString("yyyy-MM-dd");
                     model.New_title = a.normal.toString(dr["new_title"]);
                     model.Type_id = a.normal.toInt(dr["type_id"]);
                 }

@@ -69,7 +69,7 @@
 						<ul class="submenu">
 							<li><a href="ad_in_img.aspx" title="首页轮播图片">首页轮播图片</a></li>
 							<li><a href="ad_in_Skin.aspx" title="背景主题更换">背景主题更换</a></li>
-							
+							<li><a href="ad_bg_img.aspx" title="背景图片切换">背景图片切换</a></li>
 						</ul>
 					</div>
 				<%--<div class="navhead"><span>Settings</span></div>

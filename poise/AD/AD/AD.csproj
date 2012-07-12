@@ -59,6 +59,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AD.Publish.xml" />
     <Content Include="admin\ad_ad.aspx" />
     <Content Include="admin\ad_case.aspx" />
     <Content Include="admin\ad_case_ad.aspx" />
@@ -99,6 +100,7 @@
     <Content Include="admin\index.aspx" />
     <Content Include="admin\type_ad.aspx" />
     <Content Include="admin\type_ad_in.aspx" />
+    <Content Include="admin\ad_bg_img.aspx" />
     <Content Include="bin\AD.dll" />
     <Content Include="bin\AD.pdb" />
     <Content Include="bin\DAL.dll" />
@@ -154,6 +156,7 @@
     <Content Include="admin\js\wysiwyg.js" />
     <Content Include="html\CSS\css.htm" />
     <Content Include="html\javascript\javascript.htm" />
+    <Content Include="html\static\daohang.htm" />
     <Content Include="html\static\index.htm" />
     <Content Include="images\accordion.gif" />
     <Content Include="images\arrow.gif" />
@@ -230,9 +233,6 @@
     <Content Include="images\content\services\icn7.png" />
     <Content Include="images\content\services\icn8.png" />
     <Content Include="images\content\services\icn9.png" />
-    <Content Include="images\content\slide1.jpg" />
-    <Content Include="images\content\slide2.jpg" />
-    <Content Include="images\content\slide3.jpg" />
     <Content Include="images\demo-patterns\chains.png" />
     <Content Include="images\demo-patterns\china-tile.png" />
     <Content Include="images\demo-patterns\cilinders.png" />
@@ -313,7 +313,6 @@
     <Content Include="images\tweet1.png" />
     <Content Include="images\warning.png" />
     <Content Include="images\zoom-more.png" />
-    <Content Include="index.html" />
     <Content Include="js\column-height.js" />
     <Content Include="js\contact-form\contactform.js" />
     <Content Include="js\custom.js" />
@@ -518,7 +517,7 @@
     <Content Include="public\img\3.jpg" />
     <Content Include="public\img\4.jpg" />
     <Content Include="public\img\5.jpg" />
-    <Content Include="public\user_img\20120708020819.jpg" />
+    <Content Include="public\user_img\20120708040847.jpg" />
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
@@ -678,6 +677,13 @@
     <Compile Include="admin\type_ad_in.aspx.designer.cs">
       <DependentUpon>type_ad_in.aspx</DependentUpon>
     </Compile>
+    <Compile Include="admin\ad_bg_img.aspx.cs">
+      <DependentUpon>ad_bg_img.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\ad_bg_img.aspx.designer.cs">
+      <DependentUpon>ad_bg_img.aspx</DependentUpon>
+    </Compile>
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -739,11 +745,9 @@
     <Content Include="js\js.js" />
     <None Include="images\content\clients\Thumbs.db" />
     <None Include="images\content\services\Thumbs.db" />
-    <None Include="images\content\Thumbs.db" />
     <None Include="images\demo-patterns\Thumbs.db" />
     <None Include="images\patterns\Thumbs.db" />
     <None Include="images\social\Thumbs.db" />
-    <None Include="images\Thumbs.db" />
     <None Include="obj\Debug\build.force" />
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <None Include="obj\Debug\ResolveAssemblyReference.cache" />
